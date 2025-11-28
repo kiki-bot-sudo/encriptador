@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>Encriptación Hill</h1>
+        <h1>🔐 Cifrado Hill</h1>
         
         <div class="section">
             <label for="mensaje">Mensaje (máx. 30 caracteres)</label>
@@ -18,24 +18,30 @@
 
         <div class="section">
             <h3>Matriz del mensaje</h3>
-            <div id="matrizMensaje" class="matriz-display"></div>
+            <div id="matrizMensaje" class="matriz-display">Escribe un mensaje primero...</div>
         </div>
 
         <div class="section">
             <h3>Matriz clave (2x2)</h3>
             <div class="matriz-input">
-                <input type="number" id="k11" placeholder="a">
-                <input type="number" id="k12" placeholder="b">
-                <input type="number" id="k21" placeholder="c">
-                <input type="number" id="k22" placeholder="d">
+                <input type="number" id="k11" placeholder="a" value="3">
+                <input type="number" id="k12" placeholder="b" value="3">
+                <input type="number" id="k21" placeholder="c" value="2">
+                <input type="number" id="k22" placeholder="d" value="5">
+            </div>
+            <div class="info-box">
+                💡 Ejemplo: La matriz [3,3; 2,5] es válida (det=9)
             </div>
         </div>
 
-        <button id="encriptar">Encriptar</button>
+        <div class="button-group">
+            <button id="encriptar">🔒 Encriptar</button>
+            <button id="desencriptar">🔓 Desencriptar</button>
+        </div>
 
         <div class="section">
             <h3>Resultado</h3>
-            <div id="resultado" class="resultado-box"></div>
+            <div id="resultado" class="resultado-box">Esperando operación...</div>
         </div>
     </div>
 
